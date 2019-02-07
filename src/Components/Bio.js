@@ -1,5 +1,4 @@
 import React from 'react';
-//import TimeOfDay from './TimeOfDay'
 import Oneshot from './Oneshot';
 
 function Bio(props) {
@@ -9,7 +8,6 @@ function Bio(props) {
                 <div className = 'bio-text'>
                     <p>{props.name} /</p>
                     <p>{props.location}</p>
-                    {/*<TimeOfDay />*/}
                 </div>
             
         </div>

@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import HeaderBlock from './Components/HeaderBlock'
-import Main from './Components/Main'
+//import IxdMassive from './Components/IxdMassive';
+import ChatRoom from './Components/ChatRoom';
 
 class App extends Component {
   render() {
     return (
         <div className="App">
-          <div className = 'block'>
-              <HeaderBlock title='Shib S. Sahoo' description='<React.js exploration />' />
-          </div>
-            <Main />
+          <ChatRoom />
         </div>
     );
   }

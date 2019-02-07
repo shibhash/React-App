@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Bio from './Bio'
-import userData from '../../data/userData'
+import userData from '../data/userData'
 
 class UserProfile extends Component {
-    render() {
 
+    render() {
         const BioArray = userData.map(data => < Bio key={
             data.id
         }

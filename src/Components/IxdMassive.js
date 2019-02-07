@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './TimeStyle.css';
 import UserProfile from './UserProfile';
 
 
@@ -7,8 +6,11 @@ import UserProfile from './UserProfile';
 class IxdMassive extends Component {
   render() {
     return (
-          <UserProfile />
-
+          <div>
+            <p>Some words her</p>
+            <UserProfile />
+          </div>
+         
     );
   }
 }
