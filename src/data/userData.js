@@ -1,27 +1,29 @@
 const userData = [{
         id: 1,
         name: 'Yijia',
-        location: 'Newyork',
+        location: 'America/New_York',
         url: 'https://picsum.photos/800/400/?random'
     },
     {
         id: 2,
         name: 'Toby',
-        location: 'Munich',
+        location: 'Europe/Berlin',
         url: 'https://picsum.photos/320/480/?random'
     },
     {
         id: 3,
         name: 'Geert',
-        location: 'Cambridge',
+        location: 'Europe/Amsterdam',
         url: 'https://picsum.photos/480/800/?random'
     }, 
     {
         id: 4,
         name: 'Carolyn',
-        location: 'Oslo',
+        location:'Europe/Oslo',
         url: 'https://picsum.photos/500/500/?random'
-    },
+    }
+    /*
+    ,
     {
         id: 5,
         name: 'Martina',
@@ -49,7 +51,7 @@ const userData = [{
         name: 'Shib',
         location: 'India',
         url: 'https://picsum.photos/600/400/?random'
-    }
+    } */
 ]
 
 export default userData
