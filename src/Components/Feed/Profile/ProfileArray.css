@@ -3,14 +3,12 @@
     flex-flow: row wrap;
     padding: 0 1rem;  
     max-width: 100%;
-    flex-grow: 2;
 }
 
 .bio-box {
     margin: 1rem;
-    min-width: 50%;
-    max-width: 100%;
-    color: var(--primary-color);
+    max-width: 70%;
+    color: var(--tertiary-color);
     display: flex;
     flex-flow: row nowrap;
     background: white;
@@ -21,7 +19,7 @@
 }
 
 .bio-text-container {
-    margin: 1rem 4rem 1rem 1rem;
+    margin: 2rem;
     min-width: 25%;
     flex-flow: column nowrap
 }

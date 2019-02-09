@@ -1,17 +1,12 @@
 :root {
   --primary-color: #4a26fd;
   --secondary-color: #3F51B5;
-  --tertiary-color: #03A9F4;
+  --tertiary-color: #455A64;
   --accent-color: #E91E63;
 }
 
 .App {
   padding: 5rem;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
 }
 
 

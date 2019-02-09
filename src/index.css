@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Lato|Playfair+Display');
 
 body {
   width: 100%;
@@ -7,7 +7,7 @@ body {
   margin: 0;
   font-size: 12px;
   padding: 0;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -15,4 +15,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1,h2,h2,h3,h4 {
+  font-family: 'Playfair+Display',
+}
+
+p {
+   font-family: 'Lato',
 }
