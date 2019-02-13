@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import Bio from './Bio'
+
 import userData from '../../../data/userData'
 import './ProfileArray.css'
 
 class ProfileArray extends Component {
-
-    componentDidMount() {
-        const Array = userData.map(data => < Bio key = {
+    render() {
+        const Array = userData.map(data => < Bio 
+                id = {
                     data.id
                 }
                 name = {
@@ -19,12 +20,12 @@ class ProfileArray extends Component {
                     data.url
                 }
                 />)
-    }
-    render() {
+
         return  (
-            <div className = 'profile-array-container'>
-                {Array}
-            </div>   
+                <div className = 'profile-array-container'>
+                    {Array}
+                </div>   
+            
         );
     }
 }

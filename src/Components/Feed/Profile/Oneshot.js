@@ -1,10 +1,11 @@
 import React from 'react';
-import Img from 'react-image'
+//import Img from 'react-image'
 
 function Oneshot(props) {
     return (
         <div className='video-container'>
-          <Img src={props.url}></Img>
+         {/* <Img className ='image-style' src={props.url}></Img>*/}
+        
         </div>
     );
 }

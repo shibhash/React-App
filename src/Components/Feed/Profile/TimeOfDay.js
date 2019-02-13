@@ -26,7 +26,7 @@ class TimeOfDay extends Component {
     }
 
     render() {
-
+        //add a zero so that you get well formatted time
         function addZero(i) {
             if (i < 10) {
                 i = "0" + i;
@@ -34,11 +34,13 @@ class TimeOfDay extends Component {
             return i;
         }
 
+        //Cheking the location time
         let d = new Date(this.state.time.formatted);
         let h = d.getHours();
         let m = addZero(d.getMinutes());
         let timeOfDay
 
+        //Check time of the day
         if (h < 12) {
             timeOfDay = "Morning"
         } else if (h >= 12 && h < 17) {
@@ -47,18 +49,23 @@ class TimeOfDay extends Component {
             timeOfDay = "Night"
         }
         
+        //Cheking my local time
+        let myTime = new Date();
+        let myHours = myTime.getHours();
+        let myMins = addZero(myTime.getMinutes());
+        let timeTravel = myHours-h >= 0 ? 'in past' : 'in future'
+
         return (
             <div>
-                < div className = '' >
                     {this.state.time.formatted != null ? (
-                        <p>{timeOfDay} {h}:{m} </p>
+                        <p>{timeOfDay}  {h}:{m} <br/ > {timeTravel}</p>
                         )
                         :
                         (
                             <p>loading ... </p>
                         )
                     }
-                </div>
+                    
             </div>   
         );
     }

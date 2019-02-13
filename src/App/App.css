@@ -6,7 +6,22 @@
 }
 
 .App {
-  padding: 5rem;
+  padding: 0 0 5rem 0 ;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 4rem;
 
+  font-size: 3rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
+  0 3px 6px rgba(0, 0, 0, 0.23);
+}
