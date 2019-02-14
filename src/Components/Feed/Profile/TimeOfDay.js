@@ -58,7 +58,7 @@ class TimeOfDay extends Component {
         return (
             <div>
                     {this.state.time.formatted != null ? (
-                        <p>{timeOfDay}  {h}:{m} <br/ > {timeTravel}</p>
+                        <p>{timeOfDay}  {h}:{m} <br /> <span className = 'time-travel'>{timeTravel}</span></p>
                         )
                         :
                         (

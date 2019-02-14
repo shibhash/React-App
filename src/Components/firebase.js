@@ -1,4 +1,4 @@
-import * as firebase from 'firebase';
+import firebase from 'firebase'
 
 const config = {
     apiKey: process.env.REACT_APP_API_KEY,
@@ -9,4 +9,5 @@ const config = {
     messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID
 };
 
-export default firebase.initializeApp(config);
+firebase.initializeApp(config);
+export default firebase;

@@ -1,11 +1,15 @@
 import React from 'react';
+import Update from '../Components/Feed/Update/Update';
 
 function Header(props) {
     return (
-        <div className="header" >
-            <h3>{props.title}{props.name}</h3>
-            <p>{props.description}</p>
-        </div>
+        <div>
+            <div className="header" >
+                <h3>{props.title} </h3>
+            </div>
+       
+            <Update />
+       </div>
     );
 }
 

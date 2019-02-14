@@ -1,57 +1,73 @@
 import React, { Component } from 'react';
+import firebase from '../../firebase';
 import './Update.css'
-import userData from '../../../data/userData'
-import firebase from '../../Firebase';
 
 export default class Update extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
-      userDB: ''
+      userID: '',
+      url: '',
+      userDB: []
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-   handleChange(event) {
+   handleChange(e) {
      this.setState({
-       value: event.target.value
+       [e.target.name]: e.target.value
      });
    }
 
-   handleSubmit(event) {
-      let obj = {}
-      obj["name"] = this.state.value;
-      obj["url"] = "";
-      userData.push(obj);
-      console.log(userData)
-      console.log('Submitted name:' + this.state.value);
-      event.preventDefault();
+   handleSubmit(e) {
+      e.preventDefault();
+       const userRef = firebase.database().ref('userEntry');
+       const userEntry = {
+         userID: this.state.userID,
+         url: this.state.url
+       }
+      userRef.push(userEntry);
+      this.setState({
+        userID: '',
+        url: ''
+      });
    }
 
+  
+
+  removeItem(userEntryID) {
+    const userRef = firebase.database().ref(`/userEntry/${userEntryID}`);
+    userRef.remove();
+  }
+
   render() {
-    return (
-        <div className={this.props.className} >
-            <h3>{this.props.title}</h3>
-            <div className="form__row">
-              <form onSubmit={this.handleSubmit}>
-                <input 
-                  className = 'form__input'
+      return (
+            <form onSubmit={this.handleSubmit}
+                className = 'form-style'
+               >
+                <input className = 'form__input'
                   type="text"
-                  placeholder = 'Update here'
-                  value={this.state.value} 
+                  placeholder = 'Name'
+                  name= 'userID'
+                  value={this.state.userID} 
                   onChange={this.handleChange} 
                 />
-              <input 
-                className = "form__button"
-                type="submit" 
-                value="Submit" 
-              />
+
+                 < input className = 'form__input'
+                  type="text"
+                  placeholder = 'Paste URL here'
+                  name = 'url'
+                  value={this.state.url} 
+                  onChange={this.handleChange} 
+                />
+
+                < input className = "pure-material-button-contained"
+                   type = "submit"
+                   value = "Submit"
+                />
+             
             </form>
-          </div>
-            
-        </div>
     );
   }  
 }
