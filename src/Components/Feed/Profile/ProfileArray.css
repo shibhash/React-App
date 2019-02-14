@@ -1,0 +1,72 @@
+.profile-array-container {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 2rem 4rem;  
+    width: 100vw;
+    overflow: auto;
+    background-color: whitesmoke;
+}
+
+
+.bio-box {
+    margin: 2rem;
+    width: 100%;
+    color: var(--tertiary-color);
+    width:20rem;
+    height: 20em;
+    display: flex;
+    flex-flow: row nowrap;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+    0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bio-box-active {
+    margin: 2rem;
+    width: 120%;
+    flex-basis: 75%;
+
+    background: var(--accent-color);
+    color: white;
+    height: 20rem;
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    border-radius: 1rem;
+    box-shadow: 0 1px 3px #0000001f,
+    0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.bio-box:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bio-text-container {
+    padding: 2rem;
+    width: 50%;
+    max-height: 20rem;
+    flex-flow: column nowrap;
+}
+
+.time-travel {
+    margin: 2rem 0 2rem 0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.video-container {
+    overflow: hidden;
+    width: 50%;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.image-style {
+    width: auto;
+    min-height: 20rem;
+    object-fit: contain;
+}
