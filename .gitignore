@@ -13,6 +13,7 @@
 
 # api keys
 development.env
+.env
 
 # misc
 .DS_Store
