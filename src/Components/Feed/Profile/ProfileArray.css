@@ -12,10 +12,11 @@
     margin: 2rem;
     width: 100%;
     color: var(--tertiary-color);
-    width:20rem;
     height: 20em;
     display: flex;
+    flex-basis: 10%;
     flex-flow: row nowrap;
+    color: var(--text-color);
     background: white;
     border-radius: 1rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
@@ -26,7 +27,7 @@
 .bio-box-active {
     margin: 2rem;
     width: 120%;
-    flex-basis: 75%;
+    flex-basis: 50%;
 
     background: var(--accent-color);
     color: white;
@@ -61,12 +62,12 @@
 
 .video-container {
     overflow: hidden;
-    width: 50%;
+    width: 100%;
     border-radius: 1rem 0rem 0rem 1rem;
 }
 
 .image-style {
     width: auto;
     min-height: 20rem;
-    object-fit: contain;
+    object-fit: fill;
 }

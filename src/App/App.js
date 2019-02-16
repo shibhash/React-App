@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ProfileArray from '../Components/Feed/Profile/ProfileArray';
-import Header from '../Components/Header'
-//import Update from '../Components/Feed/Update/Update'
+import Header from '../Components/Header/Header'
 
 class App extends Component {
   render() {

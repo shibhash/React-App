@@ -3,6 +3,7 @@
     padding:2rem 6rem;
     justify-content: center;
     align-items: center;
+    font-family: 'Amatic SC', cursive;
     
 }
 
@@ -18,7 +19,7 @@
 }
 
 .form__input:focus {
-    background-color: var(--divider-color);
+    background-color: whitesmoke;
 }
 
 .pure-material-button-contained {

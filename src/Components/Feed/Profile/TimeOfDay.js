@@ -52,12 +52,11 @@ class TimeOfDay extends Component {
         //Cheking my local time
         let myTime = new Date();
         let myHours = myTime.getHours();
-        //let myMins = addZero(myTime.getMinutes());
         let timeTravel = myHours-h >= 0 ? 'in past' : 'in future'
 
         return (
             <div>
-                    {this.state.time.formatted != null ? (
+                    {this.state.time.formatted && h != null ? (
                         <p>{timeOfDay}  {h}:{m} <br /> <span className = 'time-travel'>{timeTravel}</span></p>
                         )
                         :

@@ -1,11 +1,11 @@
 import React from 'react';
-import Update from '../Components/Feed/Update/Update';
+import Update from '../Feed/Update/Update';
 
 function Header(props) {
     return (
         <div>
             <div className="header" >
-                <h3>{props.title} </h3>
+                <h1>{props.title} </h1>
             </div>
        
             <Update />

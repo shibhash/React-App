@@ -48,7 +48,7 @@ export default class Update extends Component {
                >
                 <input className = 'form__input'
                   type="text"
-                  placeholder = 'Name'
+                  placeholder = 'My name'
                   name= 'userID'
                   value={this.state.userID} 
                   onChange={this.handleChange} 
@@ -56,7 +56,7 @@ export default class Update extends Component {
 
                  < input className = 'form__input'
                   type="text"
-                  placeholder = 'Paste URL here'
+                  placeholder = 'My image url'
                   name = 'url'
                   value={this.state.url} 
                   onChange={this.handleChange} 

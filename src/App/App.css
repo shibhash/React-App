@@ -8,14 +8,16 @@
 }
 
 h1 {
-  font-family: 'Lato';
+  font-family: 'Amatic SC', cursive;
   font-size: 3rem;
+  font-weight: 700;
   margin: 1rem 0 1rem 0;
   font-weight: 100
 }
 
- h2, h3 {
-  font-family: 'Lato';
+ 
+ h2,h3 {
+  font-family: 'Amatic SC', cursive;
   font-size: 2rem;
   margin: 0.5rem 0 0.5rem 0;
   font-weight: 200;
@@ -50,7 +52,7 @@ p {
   background-color: var(--primary-color);
   color: white;
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 4rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
   0 3px 6px rgba(0, 0, 0, 0.23);
 }
